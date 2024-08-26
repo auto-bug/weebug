@@ -22,18 +22,18 @@ class Walk:
     def do_command(self):
         if self.command is None:
             return
-        elif self.command == 'f':
+        elif self.command == 'plus':
             self.speed_left = 2.0
             self.speed_right = 2.0
             self.leg_order = WALK_ORDER
-        elif self.command == 's':
+        elif self.command == 'play':
             self.speed_left = 0
             self.speed_right = 0
-        elif self.command == 'r':
+        elif self.command == 'forward':
             self.speed_left = -1.0
             self.speed_right = 1.0
             self.leg_order = RIGHT_ORDER
-        elif self.command == 'l':
+        elif self.command == 'rewind':
             self.speed_left = 1.0
             self.speed_right = -1.0
             self.leg_order = LEFT_ORDER
